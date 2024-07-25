@@ -1,6 +1,6 @@
 let xbolinha = 300;
-let ybolinha = 300;
-let tambolinha = 250;
+let ybolinha = 200;
+let tambolinha = 25;
 
 function setup(){
     createCanvas(600, 400);
