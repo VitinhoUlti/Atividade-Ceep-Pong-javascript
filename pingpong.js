@@ -7,7 +7,7 @@ function setup(){
 }
 
 function draw(){
-    backgroud(128, 128, 0);
+    background(128, 128, 0);
     criaBolinha(xbolinha, ybolinha, tambolinha);
 }
 
