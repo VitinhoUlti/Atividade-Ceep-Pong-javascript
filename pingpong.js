@@ -6,7 +6,7 @@ let xVelbolinha = 6;
 let yVelbolinha = 6;
 
 function setup(){
-    createCanvas(600, 400);
+    createCanvas(10000, 10000);
 }
 
 function draw(){
@@ -22,4 +22,14 @@ function criaBolinha(xbolinha, ybolinha, tambolinha){
 function moveBolinha(){
     xbolinha += xVelbolinha;
     ybolinha += yVelbolinha;
+}
+
+function Borda(){
+    if(xbolinha > 10000 || xbolinha < 0){
+        xbolinha *= -1;
+    }
+
+    if(ybolinha > 10000 || ybolinha < 0){
+        ybolinha *= -1;
+    }
 }
