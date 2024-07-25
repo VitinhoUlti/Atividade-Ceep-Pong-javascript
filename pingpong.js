@@ -26,10 +26,10 @@ function moveBolinha(){
 
 function Borda(){
     if(xbolinha > 10000 || xbolinha < 0){
-        xbolinha *= -1;
+        xVelbolinha *= -1;
     }
 
     if(ybolinha > 10000 || ybolinha < 0){
-        ybolinha *= -1;
+        yVelbolinha *= -1;
     }
 }
