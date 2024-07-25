@@ -20,6 +20,6 @@ function criaBolinha(xbolinha, ybolinha, tambolinha){
 }
 
 function moveBolinha(){
-    xBolinha += xVelbolinha;
-    yBolinha += yVelbolinha;
+    xbolinha += xVelbolinha;
+    ybolinha += yVelbolinha;
 }
