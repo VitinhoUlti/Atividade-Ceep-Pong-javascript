@@ -39,7 +39,7 @@ function Borda(){
         xVelbolinha *= -1;
     }
 
-    if(ybolinha > width || ybolinha < 0){
+    if(ybolinha > height || ybolinha < 0){
         yVelbolinha *= -1;
     }
 }
