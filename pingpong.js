@@ -13,6 +13,7 @@ function draw(){
     background(128, 128, 0);
     criaBolinha(xbolinha, ybolinha, tambolinha);
     moveBolinha();
+    Borda();
 }
 
 function criaBolinha(xbolinha, ybolinha, tambolinha){
