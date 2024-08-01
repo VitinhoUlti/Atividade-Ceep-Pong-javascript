@@ -23,6 +23,8 @@ function draw(){
     moveBolinha();
     Borda();
     criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
+    movimentaRaquete();
+    colideRaquete();
 }
 
 function criaBolinha(xbolinha, ybolinha, tambolinha){
