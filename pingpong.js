@@ -49,11 +49,11 @@ function Borda(){
         yVelbolinha *= -1;
     }
 
-    if(xbolinha > 599){
-        pontosP2++;
-    }
-    if(xbolinha < 1){
+    if(xbolinha > 600){
         pontosP1++;
+    }
+    if(xbolinha < 0){
+        pontosP2++;
     }
 
     AtualizarPontos();
