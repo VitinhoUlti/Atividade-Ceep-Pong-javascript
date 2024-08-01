@@ -41,7 +41,7 @@ function moveBolinha(){
 }
 
 function Borda(){
-    if(xbolinha > width || xbolinha < 0){
+    if(xbolinha > width || xbolinha < 1){
         xVelbolinha *= -1;
     }
 
@@ -51,9 +51,11 @@ function Borda(){
 
     if(xbolinha > 600){
         pontosP1++;
+        sleep(1000);
     }
     if(xbolinha < 0){
         pontosP2++;
+        sleep(1000);
     }
 
     AtualizarPontos();
