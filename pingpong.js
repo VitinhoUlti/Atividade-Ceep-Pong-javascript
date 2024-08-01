@@ -35,11 +35,11 @@ function moveBolinha(){
 }
 
 function Borda(){
-    if(xbolinha > 600 || xbolinha < 0){
+    if(xbolinha > width || xbolinha < 0){
         xVelbolinha *= -1;
     }
 
-    if(ybolinha > 600 || ybolinha < 0){
+    if(ybolinha > width || ybolinha < 0){
         yVelbolinha *= -1;
     }
 }
@@ -59,7 +59,7 @@ function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
         }
         
         function colideRaquete(){
-            if(xbolinha == (xRaquete + larguraRaquete) && ybolinha <= (yBolinha + alturaRaquete) && ybolinha >= 0){
+            if(xbolinha - raioBolinha < xRaquete + larguraRaquete && ybolinha - raioBolinha < yRaquete + alturaRaquete && ybolinha + raioBolinha > yRaquete){
                 xVelbolinha *= -1;
             } 
         }
