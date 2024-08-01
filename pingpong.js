@@ -7,7 +7,6 @@ let yVelbolinha = 6;
 
 let tamanho = 2000;
 
-function Criar(){
     function setup(){
         createCanvas(tamanho, tamanho);
     }
@@ -17,6 +16,7 @@ function Criar(){
         criaBolinha(xbolinha, ybolinha, tambolinha);
         moveBolinha();
         Borda();
+        criarRaquete(300, 300, 300, 600)
     }
     
     function criaBolinha(xbolinha, ybolinha, tambolinha){
@@ -38,6 +38,7 @@ function Criar(){
         }
     }
 
-    setup();
-    draw();
-}
+    function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
+        FileList("blue")
+        Reflect(xRaquete, yRaquete, larguraRaquete, alturaRaquete)
+    }
