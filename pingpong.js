@@ -60,8 +60,8 @@ function Borda(){
 }
 
 function AtualizarPontos(){
-    DivP1.textContent = pontosP1 / 3;
-    DivP2.textContent = pontosP2 / 3;
+    DivP1.textContent = pontosP1;
+    DivP2.textContent = pontosP2;
 }
 
 function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
