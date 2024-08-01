@@ -51,19 +51,17 @@ function Borda(){
 
     if(xbolinha > 600){
         pontosP1++;
-        sleep(1000);
     }
     if(xbolinha < 1){
         pontosP2++;
-        sleep(1000);
     }
 
     AtualizarPontos();
 }
 
 function AtualizarPontos(){
-    DivP1.textContent = pontosP1;
-    DivP2.textContent = pontosP2;
+    DivP1.textContent = pontosP1 / 3;
+    DivP2.textContent = pontosP2 / 3;
 }
 
 function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
