@@ -2,8 +2,8 @@ let xbolinha = 300;
 let ybolinha = 200;
 let tambolinha = 25;
 
-let xVelbolinha = 60;
-let yVelbolinha = 60;
+let xVelbolinha = 6;
+let yVelbolinha = 6;
 
 let tamanho = 2000;
 
@@ -16,7 +16,6 @@ let tamanho = 2000;
         criaBolinha(xbolinha, ybolinha, tambolinha);
         moveBolinha();
         Borda();
-        criarRaquete(300, 300, 300, 600)
     }
     
     function criaBolinha(xbolinha, ybolinha, tambolinha){
@@ -36,9 +35,4 @@ let tamanho = 2000;
         if(ybolinha > width || ybolinha < 0){
             yVelbolinha *= -1;
         }
-    }
-
-    function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
-        FileList("blue")
-        Reflect(xRaquete, yRaquete, larguraRaquete, alturaRaquete)
     }
