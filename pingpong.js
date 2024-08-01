@@ -59,7 +59,7 @@ function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
         }
         
         function colideRaquete(){
-            if(xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+            if(xbolinha == (xRaquete + larguraRaquete) && (ybolinha - yRaquete) <= alturaRaquete && (ybolinha - yRaquete) >= 0){
                 xVelbolinha *= -1;
             } 
         }
