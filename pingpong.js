@@ -22,9 +22,7 @@ function draw(){
     Borda();
     criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
     movimentaRaquete();
-    /*
     colideRaquete();
-    */
 }
 
 function criaBolinha(xbolinha, ybolinha, tambolinha){
@@ -59,11 +57,9 @@ function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
             yRaquete += 10;
             }
         }
-/*
-
-function colideRaquete(){
-    if(xBolinha - raioBolinha < xRaquete + larguraRaquete && ybolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
-        xvelocidade *= -1;
-    } 
-}
-*/
+        
+        function colideRaquete(){
+            if(xBolinha - raioBolinha < xRaquete + larguraRaquete && yBolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
+                xvelocidade *= -1;
+            } 
+        }
