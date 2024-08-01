@@ -53,7 +53,7 @@ function Borda(){
         pontosP1++;
         sleep(1000);
     }
-    if(xbolinha < 0){
+    if(xbolinha < 1){
         pontosP2++;
         sleep(1000);
     }
