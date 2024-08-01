@@ -11,10 +11,10 @@ let yRaquete = 150;
 let larguraRaquete = 10;
 let alturaRaquete = 90;
 
-let tamanho = 1000;
+let tamanho = 400;
 
 function setup(){
-    createCanvas(2000, tamanho);
+    createCanvas(600, tamanho);
 }
 
 function draw(){
@@ -47,8 +47,8 @@ function Borda(){
 }
 
 function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
-    FileList("blue");
-    Reflect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
+    fill("blue");
+    rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
 }
 
 function movimentaRaquete() {
