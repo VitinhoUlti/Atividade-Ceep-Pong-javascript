@@ -21,8 +21,8 @@ function draw(){
     moveBolinha();
     Borda();
     criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
-    /*
     movimentaRaquete();
+    /*
     colideRaquete();
     */
 }
@@ -37,11 +37,11 @@ function moveBolinha(){
 }
 
 function Borda(){
-    if(xbolinha > width || xbolinha < 0){
+    if(xbolinha > 600 || xbolinha < 0){
         xVelbolinha *= -1;
     }
 
-    if(ybolinha > width || ybolinha < 0){
+    if(ybolinha > 600 || ybolinha < 0){
         yVelbolinha *= -1;
     }
 }
@@ -50,16 +50,16 @@ function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
     fill("blue");
     rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
     }
-    /*
-
-function movimentaRaquete() {
-    if(keyIsDown(UP_ARROW)){
-        yRaquete -= 10;
-    }
-    if(keyIsDown(DOWN_ARROW)){
-        yRaquete += 10;
-    }
-}
+    
+    function movimentaRaquete() {
+        if(keyIsDown(UP_ARROW)){
+            yRaquete -= 10;
+            }
+        if(keyIsDown(DOWN_ARROW)){
+            yRaquete += 10;
+            }
+        }
+/*
 
 function colideRaquete(){
     if(xBolinha - raioBolinha < xRaquete + larguraRaquete && ybolinha - raioBolinha < yRaquete + alturaRaquete && yBolinha + raioBolinha > yRaquete){
