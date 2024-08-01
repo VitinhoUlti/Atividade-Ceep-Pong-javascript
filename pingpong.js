@@ -8,9 +8,6 @@ let yVelbolinha = 6;
 let tamanho = 2000;
 
 function Criar(){
-    setup();
-    draw();
-    
     function setup(){
         createCanvas(tamanho, tamanho);
     }
@@ -40,4 +37,7 @@ function Criar(){
             yVelbolinha *= -1;
         }
     }
+
+    setup();
+    draw();
 }
