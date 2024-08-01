@@ -11,6 +11,12 @@ let yRaquete = 150;
 let larguraRaquete = 10;
 let alturaRaquete = 90;
 
+let DivP1 = document.getElementById("PontosP1");
+let DivP2 = document.getElementById("PontosP2");
+
+let pontosP1 = 0;
+let pontosP2 = 0;
+
 function setup(){
     createCanvas(600, 400);
 }
@@ -42,24 +48,38 @@ function Borda(){
     if(ybolinha > height || ybolinha < 0){
         yVelbolinha *= -1;
     }
+
+    if(xbolinha > 599){
+        pontosP2++;
+    }
+    if(xbolinha < 1){
+        pontosP1++;
+    }
+
+    AtualizarPontos();
+}
+
+function AtualizarPontos(){
+    DivP1.textContent = pontosP1;
+    DivP2.textContent = pontosP2;
 }
 
 function criarRaquete(xRaquete, yRaquete, larguraRaquete, alturaRaquete){
     fill("blue");
     rect(xRaquete, yRaquete, larguraRaquete, alturaRaquete);
-    }
+}
     
-    function movimentaRaquete() {
-        if(keyIsDown(UP_ARROW)){
-            yRaquete -= 10;
-            }
-        if(keyIsDown(DOWN_ARROW)){
-            yRaquete += 10;
-            }
-        }
+function movimentaRaquete() {
+    if(keyIsDown(UP_ARROW)){
+        yRaquete -= 10;
+    }
+    if(keyIsDown(DOWN_ARROW)){
+        yRaquete += 10;
+    }
+}
         
-        function colideRaquete(){
-            if(xbolinha - raioBolinha < xRaquete + larguraRaquete && ybolinha - raioBolinha < yRaquete + alturaRaquete && ybolinha + raioBolinha > yRaquete){
-                xVelbolinha *= -1;
-            } 
-        }
+function colideRaquete(){
+    if(xbolinha - raioBolinha < xRaquete + larguraRaquete && ybolinha - raioBolinha < yRaquete + alturaRaquete && ybolinha + raioBolinha > yRaquete){
+        xVelbolinha *= -1;
+    } 
+}
